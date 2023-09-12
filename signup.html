@@ -1,0 +1,321 @@
+
+
+
+ 
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+ 
+  <title>React App</title>
+  <link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+<!-- bootstrap core css -->
+<link rel="stylesheet"  href="css/bootstrap.css" />
+
+<!-- fonts style -->
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+  rel="stylesheet" />
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
+<!-- responsive style -->
+<link href="css/responsive.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">   -->
+  <meta charset="utf-8">
+
+   <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ 
+ body {
+   margin: 0;
+   padding: 0;
+   background-color: #f9f9f9;
+   font-family: Arial, sans-serif;
+ }
+
+
+
+
+ .center-div {
+   position: relative;
+   height: 600px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+ }
+
+ .signup-form {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 500px;
+   padding: 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+   border-radius: 8px;
+   text-align: center;
+   padding-right: 35px;
+ }
+
+ h2 {
+   margin-bottom: 20px;
+   color: #333333;
+ }
+
+ input[type="text"],
+ input[type="email"],
+ input[type="password"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 20px;
+   padding-right: 10px;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+ }
+
+ .sumbut {
+   width: 100%;
+   padding: 10px;
+
+   background-color: #4CAF50;
+   color: #ffffff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ .sumbut:hover {
+   background-color: #45a049;
+ }
+
+ p {
+   margin-top: 20px;
+   font-size: 14px;
+   color: #666666;
+ }
+ .nav-scroller {
+     position: relative;
+     z-index: 2;
+     height: 2.75rem;
+     overflow-y: hidden;
+   }
+   </style>
+   <script>
+     document.addEventListener("DOMContentLoaded", function() {
+       var images = [
+         "images/front1.jpg",
+         "images/front2.jpg",
+         "images/front3.jpg",
+         "images/view.jpg"
+       ];
+       var currentIndex = 0;
+       var centerDiv = document.querySelector(".center-div");
+ 
+       function changeBackground() {
+         centerDiv.style.backgroundImage = "url('" + images[currentIndex] + "')";
+         currentIndex = (currentIndex + 1) % images.length;
+       }
+ 
+       setInterval(changeBackground, 3000);
+     });
+   </script>
+ </head>
+ <body>
+      
+
+<header class="header_section">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../src/images/image1.jpg" alt="" />
+        <span>
+         SocialVillage
+        </span>
+      </a>
+      <div class="contact_nav" id="">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">
+              <img src="../src/images/image1.jpg" alt="" />
+              <span>Call : +91 8890022441</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">
+              <img src="../src/images/image1.jpg" alt="" />
+              <span>socialvillage@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</header>
+<div class="custom_nav2">
+  <nav class="navbar navbar-expand-lg custom_nav-container ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="d-flex  flex-column flex-lg-row align-items-center">
+        <ul class="navbar-nav  ">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/community">Communities </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signup">Signup </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+          <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+</div>
+ 
+
+
+  <div class="center-div">
+    <div class="container">
+        <form class="signup-form" action="/signup" method="POST">
+            <h1>Signup</h1>
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <p id="password-strength-message" class="password-strength-message"></p>
+            <button class="sumbut" type="submit">SignUp</button>
+        </form>
+    </div>
+</div>
+
+   </div>
+   <section class="info_section layout_padding2-top">
+      
+    <div class="container" id="contact">
+      <div class="row">
+        <div class="col-md-3">
+          <h6>
+            About SocialVillage
+          </h6>
+          <p>
+            Imagine a place where your passions find a home, where you can create, explore, and belong. Join us at SocialVillage and be part of a dynamic world of online communities today!
+          </p>
+        </div>
+ 
+        <div class="col-md-3 contact">
+          <h6>
+            Contact Us
+          </h6>
+          <div class="info_link-box">
+          
+            <a href="">
+              <img src="images/call-white.png" alt="">
+              <span>+91 8823456721</span>
+            </a>
+            <a href="">
+              <img src="images/mail-white.png" alt="">
+              <span> socialvillage@gmail.com</span>
+            </a>
+          </div>
+     
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; 2021 All Rights Reserved.
+     
+    </p>
+  </section>
+
+   
+
+
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const passwordInput = document.querySelector('input[name="password"]');
+            const passwordStrengthMessage = document.getElementById('password-strength-message');
+            const signUpForm = document.querySelector('.signup-form');
+
+            passwordInput.addEventListener("input", function () {
+                const password = passwordInput.value;
+
+                // Define regex patterns for password strength
+                const regexPatterns = {
+                    length: /.{8,}/,
+                    uppercase: /[A-Z]/,
+                    number: /\d/,
+                    specialCharacter: /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/
+                };
+
+                // Check if the password meets all criteria
+                const isStrongPassword = Object.values(regexPatterns).every(pattern => pattern.test(password));
+
+                // Update the password strength message
+                if (isStrongPassword) {
+                    passwordStrengthMessage.textContent = "Password is strong!";
+                    passwordStrengthMessage.style.color = "green";
+                } else {
+                    passwordStrengthMessage.textContent = "Password should be at least 8 characters long with one uppercase letter, one number, and one special character.";
+                    passwordStrengthMessage.style.color = "red";
+                }
+            });
+
+            signUpForm.addEventListener("submit", function (event) {
+                const password = passwordInput.value;
+
+                // Define regex patterns for password strength
+                const regexPatterns = {
+                    length: /.{8,}/,
+                    uppercase: /[A-Z]/,
+                    number: /\d/,
+                    specialCharacter: /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/
+                };
+
+                // Check if the password meets all criteria
+                const isStrongPassword = Object.values(regexPatterns).every(pattern => pattern.test(password));
+
+                // If the password is not strong, prevent the form submission
+                if (!isStrongPassword) {
+                    event.preventDefault();
+                    alert("Password does not meet the criteria. Please follow the password guidelines.");
+                }
+            });
+        });
+    </script>
+ </body>
+ </html>
+ 
